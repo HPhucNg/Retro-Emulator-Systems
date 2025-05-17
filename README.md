@@ -41,20 +41,3 @@ To seed the demo data into the database apply:
 npx prisma db seed
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-
-## 3S Bucket Policy
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::game-website123/*"
-        }
-    ]
-}
-```
